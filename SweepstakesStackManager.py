@@ -7,7 +7,7 @@ class SweepStakesStackManager:
         self.stack = Stack()
 
     def insert_sweepstakes(self, sweepstakes):
-        pass
+        self.stack.push(sweepstakes)
 
     def get_sweepstakes(self):
-        pass
+        self.stack.pop()

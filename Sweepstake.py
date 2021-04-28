@@ -3,15 +3,16 @@ import random
 
 
 class Sweepstake:
+    contestant_list = [{
+        'first name': Contestant().first_name,
+        'last name': Contestant().last_name,
+        'email': Contestant().email,
+        'registration number': Contestant().registration_number
+    }]
 
     def __init__(self):
         self.name = ''
-        self.contestant_list = [{
-            'first name': Contestant().first_name,
-            'last name': Contestant().last_name,
-            'email': Contestant().email,
-            'registration number': Contestant().registration_number
-        }]
+
 
     def register_contestant(self, contestant):
         self.contestant_list.append(contestant)
