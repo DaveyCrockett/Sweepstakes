@@ -1,6 +1,3 @@
-from SweepstakesStackManager import SweepStakesStackManager
-from SweepstakesQueueManager import SweepstakesQueueManager
-from Sweepstake import Sweepstake
 
 
 class MarketingFirm:

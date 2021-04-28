@@ -1,16 +1,19 @@
 from Contestant import Contestant
-from user_interface import user_interface
+
 
 class Sweepstake:
-    contesant = [{
-
-    }]
 
     def __init__(self, name):
-        name = user_interface().get_string_input()
+        name =
+        self.contestant_list = [{
+            'first name': Contestant().first_name,
+            'last name': Contestant().last_name,
+            'email': Contestant().email,
+            'registration number': Contestant().registration_number
+        }]
 
-    def register_contestant(self, contesant):
-        pass
+    def register_contestant(self, contestant):
+        self.contestant_list.append(contestant)
 
     def pick_winner(self):
         winner = Contestant() # needs parameters
@@ -18,3 +21,4 @@ class Sweepstake:
 
     def print_contestant_info(self, contestant):
         print(contestant)
+
