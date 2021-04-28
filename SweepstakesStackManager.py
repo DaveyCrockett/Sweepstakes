@@ -1,4 +1,3 @@
-from Sweepstake import Sweepstake
 from data_stack import Stack
 
 
