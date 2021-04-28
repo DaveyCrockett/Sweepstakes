@@ -11,4 +11,5 @@ class SweepstakesQueueManager:
         pass
 
     def get_sweepstakes(self):
-        Sweepstake()
+        sweepstake = Sweepstake() # needs parameter
+        return sweepstake

@@ -1,3 +1,7 @@
+from SweepstakesStackManager import SweepStakesStackManager
+from SweepstakesQueueManager import SweepstakesQueueManager
+from Sweepstake import Sweepstake
+
 
 class MarketingFirm:
 
@@ -5,4 +9,4 @@ class MarketingFirm:
         pass
 
     def create_sweepstakes(self):
-        pass
+       pass
