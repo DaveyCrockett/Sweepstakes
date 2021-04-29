@@ -1,26 +1,26 @@
-from Contestant import Contestant
 import random
+from Contestant import Contestant
 
 
 class Sweepstake:
     contestant_list = [{
-        'first name': Contestant().first_name,
-        'last name': Contestant().last_name,
-        'email': Contestant().email,
-        'registration number': Contestant().registration_number
+        'first name': '',
+        'last name': '',
+        'email': '',
+        'registration number': ''
     }]
 
-    def __init__(self):
-        self.name = ''
-
+    def __init__(self, name):
+        self.name = name
 
     def register_contestant(self, contestant):
         self.contestant_list.append(contestant)
 
     def pick_winner(self):
         winner = random.choice(self.contestant_list)
+        Contestant(winner)
         return winner
 
     def print_contestant_info(self, contestant):
-        print(contestant.first_name + ' ' + contestant.last_name + ', ' + contestant.email + ', ' + contestant.registration_number)
+        return print(contestant.first_name + ' ' + contestant.last_name + ', ' + contestant.email + ', ' + contestant.registration_number)
 

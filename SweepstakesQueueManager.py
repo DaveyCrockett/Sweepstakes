@@ -1,5 +1,4 @@
 from data_queue import Queue
-from Sweepstake import Sweepstake
 
 
 class SweepstakesQueueManager:
@@ -8,8 +7,7 @@ class SweepstakesQueueManager:
         self.queue = Queue()
 
     def insert_sweepstakes(self, sweepstakes):
-        pass
+        self.queue.enqueue(sweepstakes)
 
     def get_sweepstakes(self):
-        sweepstake = Sweepstake() # needs parameter
-        return sweepstake
+        return self.queue.dequeue()

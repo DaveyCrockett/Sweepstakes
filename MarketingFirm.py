@@ -3,7 +3,14 @@
 class MarketingFirm:
 
     def __init__(self, manager):
-        pass
+        self.manager = manager
 
     def create_sweepstakes(self):
-       pass
+        self.manager.insert_sweepstakes()
+
+
+
+
+
+
+
