@@ -3,5 +3,4 @@ class user_interface:
         pass
 
     def get_string_input(self, str):
-        user_input = input(str)
-        return user_input
+        return input(str)

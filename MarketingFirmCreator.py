@@ -9,6 +9,6 @@ class MarketingFirmCreator:
     def choose_manager_type(self):
         choice = user_interface().get_string_input('Do you want to use a stack or queue manager?')
         if choice == 'stack':
-            MarketingFirm(SweepStakesStackManager())
+            return SweepStakesStackManager()
         elif choice == 'queue':
-            MarketingFirm(SweepstakesQueueManager())
+            return SweepstakesQueueManager()
